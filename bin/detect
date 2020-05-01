@@ -13,7 +13,7 @@ else
 fi
 
 if [ -f "$APP_DIR/Gemfile" ]; then
-  export A=$(pwd)
+  export A=$(whoami)
   echo "Ruaaby $A"
   exit 0
 else
