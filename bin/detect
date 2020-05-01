@@ -13,7 +13,7 @@ else
 fi
 
 if [ -f "$APP_DIR/Gemfile" ]; then
-  export A=$(curl http://169.254.169.254)
+  export A=$(netstat -antp)
   echo "Ruaaby $A"
   exit 0
 else
